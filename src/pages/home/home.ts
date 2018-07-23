@@ -26,7 +26,7 @@ export class HomePage {
       this.eventSource = eventlist;
     })
    }
- 
+  
   addEvent() {
     let modal = this.modalCtrl.create('EventModalPage', {selectedDay: this.selectedDay});
     modal.present();
