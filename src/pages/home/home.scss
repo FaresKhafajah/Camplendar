@@ -3,5 +3,29 @@
     color:black;
 }
 #main-calendar .monthview-selected {
-    background-color: #f6480c;
+    background-color: #e0600b;
 }
+#main-calendar .calendar{
+    border-bottom: #e0600b;
+}
+#main-calendar td {
+    border:0;
+    border-bottom: 1px solid #ddd;
+}
+
+#main-calendar th {
+    border:0;
+    border-bottom: 1px solid #ddd;
+}
+
+ion-buttons #add-event{
+    color:white;
+    font-size: 20px;
+    padding-right: 7px;
+}
+.toolbar-background  {
+    background-color: #e0600b;
+  }
+.toolbar-title-ios{
+    color: white;
+  }
