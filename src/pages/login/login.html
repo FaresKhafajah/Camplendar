@@ -1,12 +1,8 @@
 <ion-header>
-
     <ion-navbar>
       <ion-title>Student Log In</ion-title>
     </ion-navbar>
-   
    </ion-header>
-   
-   
    <ion-content padding>
     <div>{{loginError}}</div>
     <form (ngSubmit)="login()">
@@ -18,9 +14,8 @@
            <ion-input [(ngModel)]="password" type="password" placeholder="Password" name="password"></ion-input>
          </ion-item>
        </ion-list>
-   
+
        <div padding-horizontal>
-   
          <button ion-button full type="submit">Log in</button>
         <button ion-button icon-left margin-vertical block clear (click)="signup()">
           <ion-icon name="person-add"></ion-icon>

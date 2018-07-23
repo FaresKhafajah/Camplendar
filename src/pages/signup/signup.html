@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Sign up</ion-title>
+    </ion-navbar>
+   </ion-header>
+   
+   <ion-content>
+    <form (ngSubmit)="signup()">
+      <ion-list inset>
+        <div class="form-error">{{signupError}}</div>
+        <ion-item>
+          <ion-input [(ngModel)]="email" type="text" placeholder="Email" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="password" type="password" placeholder="Password" name="password"></ion-input>
+        </ion-item>
+      </ion-list>
+   
+      <div padding-horizontal>
+        <button ion-button full type="submit">Sign up</button>
+      </div>
+    </form>
+   </ion-content>
+   
