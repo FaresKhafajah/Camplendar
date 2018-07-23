@@ -11,8 +11,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = LoginPage;
-  pages: Array<{title: string, component: any}>;
+  rootPage: any = LoginPage;
+  pages: Array<{ title: string, component: any }>;
 
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -24,8 +24,11 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'Settings', component: HomePage },
+      { title: 'FeedBack', component: HomePage },
+      { title: 'Logout', component: LoginPage }
     ];
-  
+
   }
   openPage(page) {
     this.nav.setRoot(page.component);
