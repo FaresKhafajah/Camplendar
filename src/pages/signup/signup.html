@@ -8,8 +8,9 @@
     <form (ngSubmit)="signup()">
       <ion-list inset>
         <div class="form-error">{{signupError}}</div>
-        <ion-item>
-         <ion-item text-center><img src="../../assets/imgs/Camplogo.png"></ion-item>
+           <ion-item text-center><img style="max-width: 58%;" src="../../assets/imgs/Camplogo.png"></ion-item>
+           <ion-item>
+
           <ion-input [(ngModel)]="email" type="text" placeholder="Email" name="email"></ion-input>
         </ion-item>
         <ion-item>
