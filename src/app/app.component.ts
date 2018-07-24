@@ -1,3 +1,4 @@
+import { FeedBackPage } from './../pages/feed-back/feed-back';
 import { HomePage } from './../pages/home/home';
 import { LoginPageModule } from './../pages/login/login.module';
 import { LoginPage } from './../pages/login/login';
@@ -25,13 +26,22 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Settings', component: HomePage },
-      { title: 'FeedBack', component: HomePage },
+      { title: 'FeedBack', component:FeedBackPage  },
       { title: 'Logout', component: LoginPage }
     ];
 
   }
-  openPage(page) {
-    this.nav.setRoot(page.component);
+  openPageHome() {
+    this.nav.setRoot(HomePage);
+  }
+  openPageSettings() {
+    this.nav.setRoot(HomePage);
+  }
+  openPageFeedBack() {
+    this.nav.push(FeedBackPage);
+  }
+  openPageLogout() {
+    this.nav.setRoot(LoginPage);
   }
 }
 

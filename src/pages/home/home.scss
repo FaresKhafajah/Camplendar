@@ -11,7 +11,13 @@
 #main-calendar td {
     border:0;
     border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    font-size:15px;
+    padding-top: 15px;
+   
 }
+
 
 #main-calendar th {
     border:0;
@@ -28,4 +34,7 @@ ion-buttons #add-event{
   }
 .toolbar-title-ios{
     color: white;
+  }
+  .bar-button-default-ios, {
+      color:white;
   }

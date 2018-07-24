@@ -1,3 +1,4 @@
+import { FeedBackPage } from './../pages/feed-back/feed-back';
 import { LoginPageModule } from './../pages/login/login.module';
 import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,7 +14,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { firebaseConfig } from '../config';
 import { AuthProvider } from '../providers/auth/auth';
 import { SignupPageModule } from './../pages/signup/signup.module';
-import { NgCalendarModule  } from 'ionic2-calendar';
+import { NgCalendarModule } from 'ionic2-calendar';
 
 
 
@@ -21,6 +22,8 @@ import { NgCalendarModule  } from 'ionic2-calendar';
   declarations: [
     MyApp,
     HomePage,
+    FeedBackPage
+
   ],
   imports: [
     BrowserModule,
@@ -28,21 +31,23 @@ import { NgCalendarModule  } from 'ionic2-calendar';
     LoginPageModule,
     AngularFireModule.initializeApp(firebaseConfig),
     SignupPageModule,
-    NgCalendarModule
+    NgCalendarModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    FeedBackPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     AngularFireAuth,
     AngularFireDatabase,
     AuthProvider,
- 
+
   ]
 })
-export class AppModule {}
+export class AppModule { }
