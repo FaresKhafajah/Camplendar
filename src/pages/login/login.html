@@ -1,12 +1,13 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>Student Log In</ion-title>
+      <ion-title>Host Log In</ion-title>
     </ion-navbar>
-   </ion-header>
-   <ion-content padding>
+</ion-header>
+   <ion-content>
     <div>{{loginError}}</div>
     <form (ngSubmit)="login()">
        <ion-list >
+         <ion-item text-center><img style="max-width: 58%;" src="../../assets/imgs/Camplogo.png"></ion-item>
          <ion-item>
            <ion-input [(ngModel)]="email" type="text" placeholder="Email" name="email"></ion-input>
          </ion-item>
@@ -15,7 +16,7 @@
          </ion-item>
        </ion-list>
 
-       <div padding-horizontal>
+       <div>
          <button ion-button full type="submit">Log in</button>
         <button ion-button icon-left margin-vertical block clear (click)="signup()">
           <ion-icon name="person-add"></ion-icon>
