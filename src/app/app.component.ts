@@ -5,11 +5,12 @@ import { FeedBackPage } from './../pages/feed-back/feed-back';
 import { HomePage } from './../pages/home/home';
 import { LoginPage } from './../pages/login/login';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, PopoverController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SettingsPage } from '../pages/settings/settings';
 import { take } from 'rxjs/operators';
+import { PopoverPage } from '../pages/popover/popover';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +21,8 @@ export class MyApp {
   pages: Array<{ title: string, component: any }>;
 
 
-  constructor(platform: Platform, private auth: AuthProvider, afAuth: AngularFireAuth, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, private auth: AuthProvider, afAuth: AngularFireAuth,
+    statusBar: StatusBar, public popoverCtrl: PopoverController, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -65,6 +67,12 @@ export class MyApp {
     this.auth.logOut().then(() => {
       this.nav.setRoot(LoginPage);
     });;
+  }
+  presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(PopoverPage);
+    popover.present({
+      ev: myEvent
+    });
   }
 }
 

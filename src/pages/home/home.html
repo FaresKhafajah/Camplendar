@@ -7,6 +7,9 @@
       {{ viewTitle }}
     </ion-title>
     <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)" id="popOver">
+            <ion-icon id="notifi" name="notifications"></ion-icon>
+          </button>
       <button ion-button icon-only (click)="addEvent()">
         <ion-icon name="add"></ion-icon>
       </button>

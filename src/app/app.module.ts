@@ -1,3 +1,4 @@
+import { PopoverPage } from './../pages/popover/popover';
 import { FeedBackPage } from './../pages/feed-back/feed-back';
 import { LoginPageModule } from './../pages/login/login.module';
 import { LoginPage } from './../pages/login/login';
@@ -27,6 +28,8 @@ import { InvitePage } from '../pages/invite/invite';
     FeedBackPage,
     SettingsPage,
     InvitePage,
+    PopoverPage,
+
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,6 @@ import { InvitePage } from '../pages/invite/invite';
     LoginPageModule,
     AngularFireModule.initializeApp(firebaseConfig),
     SignupPageModule,
-   
     NgCalendarModule,
     
   ],
@@ -45,7 +47,7 @@ import { InvitePage } from '../pages/invite/invite';
     FeedBackPage,
     SettingsPage,
     InvitePage,
-
+    PopoverPage,
   ],
   providers: [
     StatusBar,
