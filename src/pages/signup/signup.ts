@@ -12,6 +12,7 @@ export class SignupPage {
  signupError: string;
  email: string;
  password: string;
+ 
 
  constructor(public navCtrl: NavController, private auth: AuthProvider, public navParams: NavParams) {
  }

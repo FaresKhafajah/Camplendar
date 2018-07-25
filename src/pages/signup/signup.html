@@ -17,9 +17,17 @@
           <ion-input [(ngModel)]="password" type="password" placeholder="Password" name="password"></ion-input>
         </ion-item>
       </ion-list>
-   
-      <div padding-horizontal>
-        <button ion-button full type="submit">Sign up</button>
+      <ion-item>
+          <ion-label>Type</ion-label>
+          <ion-select>
+            <ion-option>Host</ion-option>
+            <ion-option>Guest</ion-option>
+          </ion-select>
+        </ion-item>
+     <br><br>
+
+        <div padding-horizontal>
+        <button style="border-radius: 30px" ion-button full type="submit">Sign up</button>
       </div>
     </form>
    </ion-content>

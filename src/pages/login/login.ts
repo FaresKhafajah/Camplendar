@@ -32,7 +32,6 @@ export class LoginPage {
     this.auth.signInWithEmail(credentials).then(
       () => this.navCtrl.setRoot(HomePage),
       (error) => this.loginError = error.message);
-    document.getElementById('errorBox').style.display = "inherit";
   }
 
   signup() {

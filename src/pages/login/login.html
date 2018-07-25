@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>Host Log In</ion-title>
+      <ion-title>Log In</ion-title>
     </ion-navbar>
 
 
@@ -19,11 +19,13 @@
        </ion-list>
 
        <div>
-         <button ion-button full type="submit">Log in</button>
+         <button style="border-radius: 30px;" ion-button full type="submit">Log in</button>
         <button ion-button icon-left margin-vertical block clear (click)="signup()">
-          <ion-icon name="person-add"></ion-icon>
-          Sign up
+          New Account?
         </button>
+        <button ion-button icon-left margin-vertical block clear (click)="signup()">
+            Forgot Password?
+          </button>
        </div>
     </form>
    </ion-content>
