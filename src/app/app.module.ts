@@ -16,6 +16,7 @@ import { AuthProvider } from '../providers/auth/auth';
 import { SignupPageModule } from './../pages/signup/signup.module';
 import { NgCalendarModule } from 'ionic2-calendar';
 import { SettingsPage } from '../pages/settings/settings';
+import { InvitePage } from '../pages/invite/invite';
 
 
 
@@ -25,7 +26,7 @@ import { SettingsPage } from '../pages/settings/settings';
     HomePage,
     FeedBackPage,
     SettingsPage,
-
+    InvitePage,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +44,8 @@ import { SettingsPage } from '../pages/settings/settings';
     HomePage,
     FeedBackPage,
     SettingsPage,
+    InvitePage,
+
   ],
   providers: [
     StatusBar,

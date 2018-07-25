@@ -1,3 +1,4 @@
+import { InvitePage } from './../pages/invite/invite';
 import { FeedBackPage } from './../pages/feed-back/feed-back';
 import { HomePage } from './../pages/home/home';
 import { LoginPage } from './../pages/login/login';
@@ -39,6 +40,9 @@ export class MyApp {
   }
   openPageFeedBack() {
     this.nav.push(FeedBackPage);
+  }
+  openPageInvite() {
+    this.nav.push(InvitePage);
   }
   openPageLogout() {
     this.nav.setRoot(LoginPage);
