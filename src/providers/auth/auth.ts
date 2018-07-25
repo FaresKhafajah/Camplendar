@@ -13,6 +13,10 @@ export class AuthProvider {
    });
  }
 
+logOut(){
+  return this.afAuth.auth.signOut();
+}
+
  signInWithEmail(credentials) {
    return this.afAuth.auth.signInWithEmailAndPassword(
      credentials.email,
