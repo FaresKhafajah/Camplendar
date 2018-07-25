@@ -15,6 +15,7 @@ import { firebaseConfig } from '../config';
 import { AuthProvider } from '../providers/auth/auth';
 import { SignupPageModule } from './../pages/signup/signup.module';
 import { NgCalendarModule } from 'ionic2-calendar';
+import { SettingsPage } from '../pages/settings/settings';
 
 
 
@@ -22,7 +23,8 @@ import { NgCalendarModule } from 'ionic2-calendar';
   declarations: [
     MyApp,
     HomePage,
-    FeedBackPage
+    FeedBackPage,
+    SettingsPage,
 
   ],
   imports: [
@@ -31,6 +33,7 @@ import { NgCalendarModule } from 'ionic2-calendar';
     LoginPageModule,
     AngularFireModule.initializeApp(firebaseConfig),
     SignupPageModule,
+   
     NgCalendarModule,
     
   ],
@@ -38,7 +41,8 @@ import { NgCalendarModule } from 'ionic2-calendar';
   entryComponents: [
     MyApp,
     HomePage,
-    FeedBackPage
+    FeedBackPage,
+    SettingsPage,
   ],
   providers: [
     StatusBar,
